@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eed81562-799c-423f-be4c-911e23819ba4/resourceGroups/everest40-srv/providers/Microsoft.Web/sites/everest40-landing",
+    "appService.deploySubpath": "dist"
+}

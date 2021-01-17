@@ -1,3 +1,11 @@
 .hidden{
     display: none;
 }
+a.nav-link:hover, a.nav-link.active{
+    border-bottom: solid 5px #00b0dc;
+    cursor:pointer
+}
+li.nav-item{
+    border-bottom: solid 5px transparent;
+    cursor:pointer
+}

@@ -5,12 +5,10 @@ const height = window.innerHeight
 @Component({
     selector: 'app-components',
     templateUrl: './components.component.html',
+    styleUrls: ['./components.component.scss'],
     styles: [`
     div.section{
         min-height:`+height+`px
-    }
-    ngb-progressbar {
-        margin-top: 5rem;
     }
     `]
 })

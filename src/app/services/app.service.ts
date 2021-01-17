@@ -3,7 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { isDevMode } from '@angular/core';
 
-const serverAddress = isDevMode()  ? 'http://localhost:9800' : 'https://everest40-server.azurewebsites.net'
+const serverAddress = 'https://everest40-server.azurewebsites.net'
 @Injectable({
   providedIn: 'root'
 })

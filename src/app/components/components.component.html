@@ -1,33 +1,46 @@
 <div class="wrapper">
-    <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
+    <div class="page-header section-dark" style="background-image: url('assets/img/wp/everest.jpg')">
         <div class="filter"></div>
-        <div class="content-center">
-            <div class="container">
-                <div class="title-brand">
-                    <div class="angular-logo" style="display:none">
-                        <img src="assets/img/eum-logo.png" alt="">
-                    </div>
-                    <h1 class="presentation-title">
-                        <img src="assets/img/eum-logo.png" style="width: 100%;" alt="">
-                    </h1>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                </div>
+        <div class="container">
 
-                <h2 class="presentation-subtitle text-center">O topo a um passo de cada vez</h2>
+            <div class="title-brand">
+            <h2 class="presentation-subtitle text-center" style="display:none">O topo a um passo de cada vez</h2>
+                <div class="card page-carousel" style="background-color: transparent; box-shadow:none">
+                    <ngb-carousel>
+                        <ng-template ngbSlide>
+                            <h1 class="presentation-title">
+                                Consultoria e Gestão de Carreiras
+                            </h1>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <h1 class="presentation-title">
+                                Planeamento estratégico pessoal
+                            </h1>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <h1 class="presentation-title">
+                                Desenvolvimento e gestão de carreiras.
+                            </h1>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+                <div class="fog-low">
+                    <img src="assets/img/fog-low.png" alt="">
+                </div>
+                <div class="fog-low right">
+                    <img src="assets/img/fog-low.png" alt="">
+                </div>
             </div>
         </div>
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
         <h6 class=" category-absolute ml-auto mr-auto">
         </h6>
     </div>
+
     <div class="main">
         <app-basicelements style="display:none"></app-basicelements>
         <app-navigation style="display:none"></app-navigation>
+
         <div class="section" style="display:none">
             <div class="container">
                 <div class="row">
@@ -105,6 +118,7 @@
                 </div>
             </div>
         </div>
+
         <div class="section section-notifications" style="display:none" id="notifications">
             <div class="container">
                 <div class="tim-title">
@@ -113,7 +127,9 @@
             </div>
             <app-notification></app-notification>
         </div>
+
         <app-typography style="display:none"></app-typography>
+
         <div class="section javascript-components " style="display:none">
             <div class="container">
                 <div class="tim-title">
@@ -205,98 +221,29 @@
                 </div>
             </div>
         </div>
-        
-        <div class="section" id="aboutus">
+
+        <div class="section" id="highlights">
             <div class="container">
 
                 <div class="col-md-12">
-                    <h1 class="text-center">Fale connosco</h1>
+                    <h1 class="text-center">Destaques</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-8 mr-auto ml-auto">
-                        <h2 class="title"></h2><br />
+                        <h2 class="title"></h2>
                         <p class="description">
                             A Everest LDA Consultoria e Gestão de Carreiras é uma empresa de consultoria online
                             em planeamento estratégico pessoal, desenvolvimento e gestão de carreiras.
-                        </p><br />
-                        <div class="card page-carousel">
-                            <ngb-carousel>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                    <div class="carousel-caption">
-                                        <p>Missão</p>
-                                    </div>
-                                </ng-template>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
-                                    <div class="carousel-caption">
-                                        <p>Visão</p>
-                                    </div>
-                                </ng-template>
-                                <ng-template ngbSlide>
-                                    <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                    <div class="carousel-caption">
-                                        <p>Valores</p>
-                                    </div>
-                                </ng-template>
-                            </ngb-carousel>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section section-dark section-nucleo-icons">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <h2 class="title">Everest4.0</h2><br />
-                        <p class="description">
-                            O Everest 4.0 é o aplicativo pelo qual prestamos o nossos serviços. É possível utilizar
-                            muitas funcionalidades do aplicativo mesmo quando não estiver conectado à internet.
-                            Assista o vídeo abaixo para conhecer mais sobre o aplicativo e suas principais
-                            funcionalidades, incluindo as que estão disponíveis offline.
-                        </p><br />
-                        <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">Entrar</a>
-                        <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round"
-                            target="_blank">Registar-se</a>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <div class="icons-container">
-                            <i class="nc-icon nc-time-alarm"></i>
-                            <i class="nc-icon nc-atom"></i>
-                            <i class="nc-icon nc-camera-compact"></i>
-                            <i class="nc-icon nc-watch-time"></i>
-                            <i class="nc-icon nc-key-25"></i>
-                            <i class="nc-icon nc-diamond"></i>
-                            <i class="nc-icon nc-user-run"></i>
-                            <i class="nc-icon nc-layout-11"></i>
-                            <i class="nc-icon nc-badge"></i>
-                            <i class="nc-icon nc-bulb-63"></i>
-                            <i class="nc-icon nc-favourite-28"></i>
-                            <i class="nc-icon nc-planet"></i>
-                            <i class="nc-icon nc-tie-bow"></i>
-                            <i class="nc-icon nc-zoom-split"></i>
-                            <i class="nc-icon nc-cloud-download-93"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="pricing">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-12 ml-auto mr-auto">
-                        <app-pricing></app-pricing>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section section-image section-login"  style="background-image: url('assets/img/login-image.jpg');">
+        <div class="section section-image section-login" id="ourapp" style="background-image: url('assets/img/login-image.jpg');">
             <div class="container">
                 <div class="row example-page">
                     <div class="col-md-12 mr-auto ml-auto">
@@ -328,50 +275,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="section" style="display: none;">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Do you like what you see?</h2>
-                        <p class="description">Cause if you do, it can be yours for Free. Hit the button below and
-                            download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 download-area ml-auto mr-auto">
-                        <a href="https://www.creative-tim.com/product/paper-kit-2"
-                            class="btn btn-warning btn-round">Download free HTML</a>
-                        <a href="https://www.creative-tim.com/product/paper-kit-2-angular"
-                            class="btn btn-danger btn-round">Download free Angular</a>
-                    </div>
-                </div>
-                <div class="row justify-content-md-center sharing-area text-center">
-                    <div class="text-center col-md-12 col-lg-8">
-                        <h3>Thank you for supporting us!</h3>
-                    </div>
-                    <div class="text-center col-md-12 col-lg-8">
-                        <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip"
-                            title="Tweet!">
-                            <i class="fa fa-twitter"></i> Twitter
-                        </a>
-                        <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip"
-                            title="Share!">
-                            <i class="fa fa-google-plus"></i> Google
-                        </a>
-                        <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip"
-                            title="Share!">
-                            <i class="fa fa-facebook-square"></i> Facebook
-                        </a>
-                        <a href="https://github.com/creativetimofficial/paper-kit"
-                            class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
-                            <i class="fa fa-github"></i> Star
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <div class="section text-center" id="services">
             <div class="container">
@@ -445,6 +348,144 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Everest4.0</h2><br />
+                        <p class="description">
+                            O Everest 4.0 é o aplicativo pelo qual prestamos o nossos serviços. É possível utilizar
+                            muitas funcionalidades do aplicativo mesmo quando não estiver conectado à internet.
+                            Assista o vídeo abaixo para conhecer mais sobre o aplicativo e suas principais
+                            funcionalidades, incluindo as que estão disponíveis offline.
+                        </p><br />
+                        <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">Entrar</a>
+                        <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round"
+                            target="_blank">Registar-se</a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="icons-container">
+                            <i class="nc-icon nc-time-alarm"></i>
+                            <i class="nc-icon nc-atom"></i>
+                            <i class="nc-icon nc-camera-compact"></i>
+                            <i class="nc-icon nc-watch-time"></i>
+                            <i class="nc-icon nc-key-25"></i>
+                            <i class="nc-icon nc-diamond"></i>
+                            <i class="nc-icon nc-user-run"></i>
+                            <i class="nc-icon nc-layout-11"></i>
+                            <i class="nc-icon nc-badge"></i>
+                            <i class="nc-icon nc-bulb-63"></i>
+                            <i class="nc-icon nc-favourite-28"></i>
+                            <i class="nc-icon nc-planet"></i>
+                            <i class="nc-icon nc-tie-bow"></i>
+                            <i class="nc-icon nc-zoom-split"></i>
+                            <i class="nc-icon nc-cloud-download-93"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="pricing">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12 ml-auto mr-auto">
+                        <app-pricing></app-pricing>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="display: none;">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Do you like what you see?</h2>
+                        <p class="description">Cause if you do, it can be yours for Free. Hit the button below and
+                            download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 download-area ml-auto mr-auto">
+                        <a href="https://www.creative-tim.com/product/paper-kit-2"
+                            class="btn btn-warning btn-round">Download free HTML</a>
+                        <a href="https://www.creative-tim.com/product/paper-kit-2-angular"
+                            class="btn btn-danger btn-round">Download free Angular</a>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center sharing-area text-center">
+                    <div class="text-center col-md-12 col-lg-8">
+                        <h3>Thank you for supporting us!</h3>
+                    </div>
+                    <div class="text-center col-md-12 col-lg-8">
+                        <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip"
+                            title="Tweet!">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip"
+                            title="Share!">
+                            <i class="fa fa-google-plus"></i> Google
+                        </a>
+                        <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip"
+                            title="Share!">
+                            <i class="fa fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="https://github.com/creativetimofficial/paper-kit"
+                            class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
+                            <i class="fa fa-github"></i> Star
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="aboutus">
+            <div class="container">
+
+                <div class="col-md-12">
+                    <h1 class="text-center">Sobre Nós</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <h2 class="title"></h2><br />
+                        <p class="description">
+                            A Everest LDA Consultoria e Gestão de Carreiras é uma empresa de consultoria online
+                            em planeamento estratégico pessoal, desenvolvimento e gestão de carreiras.
+                        </p><br />
+                        <div class="card page-carousel">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Missão</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                                    <div class="carousel-caption">
+                                        <p>Visão</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                    <div class="carousel-caption">
+                                        <p>Valores</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-carousel>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
