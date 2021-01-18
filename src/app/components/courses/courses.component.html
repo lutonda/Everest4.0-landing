@@ -1,0 +1,40 @@
+<div class="container">
+    <h2 style="color:#FFF">_</h2>
+    
+</div>
+<div class="container-fluid">
+    <div class="col-md-12 text-center">
+        <div class="col-md-2" *ngFor="let item of courses.slice(0,6); let i = index">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top" style=" background: url({{serverAddress}}{{item.cover}}) no-repeat center center; "></div>
+                    <div class="bottom" id="botton_{{i}}">
+                        <div class="left">
+                            <div class="details">
+                                <span><b>{{item.title}}</b></span>
+                            </div>
+                            <div class="buy" (click)="buy($event)" title="botton_{{i}}">
+                                <i class="nc-icon nc-stre-right"></i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons"></i></div>
+                            <div class="details">
+                                <button class="btn btn-danger btn-round">Inscrever-se</button>
+                            </div>
+                            <div class="remove" (click)="remove($event)" title="botton_{{i}}"><i class="nc-icon nc-simple-remove"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="nc-icon nc-bulb-63"></i></div>
+                    <div class="contents">
+                        <p>
+                            {{item.descriptions}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger btn-round">Ver mais ...</button>
+    </div>
+</div>

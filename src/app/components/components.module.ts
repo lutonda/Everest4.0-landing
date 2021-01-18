@@ -16,7 +16,10 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TestimonialValidationComponent } from './testimonial-validation/testimonial-validation.component';
+import { VacantJobComponent } from './vacant-job/vacant-job.component';
+import { CoursesComponent } from './courses/courses.component';
 
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
     imports: [
         CommonModule,
@@ -24,7 +27,11 @@ import { TestimonialValidationComponent } from './testimonial-validation/testimo
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+
+    AgmCoreModule.forRoot({
+        apiKey: ''
+      })
     ],
     declarations: [
         ComponentsComponent,
@@ -36,7 +43,9 @@ import { TestimonialValidationComponent } from './testimonial-validation/testimo
         NgbdModalComponent,
         NgbdModalContent,
         PricingComponent,
-        TestimonialValidationComponent
+        TestimonialValidationComponent,
+        VacantJobComponent,
+        CoursesComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

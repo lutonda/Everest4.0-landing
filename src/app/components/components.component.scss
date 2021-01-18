@@ -12,3 +12,18 @@ ngb-progressbar {
 .title-brand{
     max-width: 980px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+  .presentation-title-2 {
+    font-size: 8em;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom, #00b0dc 35%, #48839f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
